@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alex-sarkisov/SpaceXKit.git",
       "state" : {
-        "revision" : "7036d2752eb77a1456d4d24a84a3aea82968d928",
-        "version" : "1.0.0"
+        "branch" : "main",
+        "revision" : "2e490f3f5569b31137b91e6dffde1e4faa06225e"
       }
     }
   ],

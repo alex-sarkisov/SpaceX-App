@@ -15,15 +15,15 @@ class LaunchListViewModel: ObservableObject {
     @Published var launchRowModels: [LaunchRowModel] = []
     @Published var shouldShowActivityIndicator: Bool = true
     
-    private let spaceXKit: SpaceXKit
+    private let spaceX: SpaceX
     
     private var page: Int = 0
     private var hasNextPage: Bool = false
     private var launches: [Launch] = []
     private var cancellable: AnyCancellable?
     
-    init(spaceXKit: SpaceXKit = .shared) {
-        self.spaceXKit = spaceXKit
+    init(spaceX: SpaceX = .shared) {
+        self.spaceX = spaceX
         self.cancellable = $searchText
             .debounce(for: .milliseconds(250), scheduler: DispatchQueue.main)
             .removeDuplicates()
@@ -45,8 +45,8 @@ class LaunchListViewModel: ObservableObject {
         Task {
             do {
                 let nextPage = page + 1
-                let paginatedLaunches = try await spaceXKit.paginatedLaunches(searchQuery: searchText,
-                                                                              page: nextPage)
+                let paginatedLaunches = try await spaceX.paginatedLaunches(searchQuery: searchText,
+                                                                           page: nextPage)
                 page = nextPage
                 await updateData(paginatedLaunches: paginatedLaunches)
             } catch {

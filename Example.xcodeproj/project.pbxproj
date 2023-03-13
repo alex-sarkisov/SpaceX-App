@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA7C5EF329B6B9C500FD2678 /* SpaceXKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA7C5EF229B6B9C500FD2678 /* SpaceXKit */; };
 		FA9D476829B61E23009A622E /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D476729B61E23009A622E /* ExampleApp.swift */; };
 		FA9D476C29B61E25009A622E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9D476B29B61E25009A622E /* Assets.xcassets */; };
 		FA9D476F29B61E25009A622E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9D476E29B61E25009A622E /* Preview Assets.xcassets */; };
-		FA9D477B29B6227F009A622E /* SpaceXKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA9D477A29B6227F009A622E /* SpaceXKit */; };
 		FA9D477F29B64290009A622E /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D477E29B64290009A622E /* LaunchListView.swift */; };
 		FA9D478129B6429D009A622E /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D478029B6429D009A622E /* LaunchListViewModel.swift */; };
 		FA9D478329B64419009A622E /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D478229B64419009A622E /* ScreenFactory.swift */; };
@@ -19,7 +17,21 @@
 		FA9D478829B64518009A622E /* LaunchRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D478729B64518009A622E /* LaunchRowModel.swift */; };
 		FA9D478B29B69562009A622E /* LaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D478A29B69562009A622E /* LaunchDetailsView.swift */; };
 		FA9D478D29B69571009A622E /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D478C29B69571009A622E /* LaunchDetailsViewModel.swift */; };
+		FAB297C329BFC88C007390F8 /* SpaceXKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAB297C229BFC88C007390F8 /* SpaceXKit */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA21604829BF997300A8584A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA9D476429B61E23009A622E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9D477B29B6227F009A622E /* SpaceXKit in Frameworks */,
-				FA7C5EF329B6B9C500FD2678 /* SpaceXKit in Frameworks */,
+				FAB297C329BFC88C007390F8 /* SpaceXKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +136,7 @@
 				FA9D476029B61E23009A622E /* Sources */,
 				FA9D476129B61E23009A622E /* Frameworks */,
 				FA9D476229B61E23009A622E /* Resources */,
+				FA21604829BF997300A8584A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,8 +144,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				FA9D477A29B6227F009A622E /* SpaceXKit */,
-				FA7C5EF229B6B9C500FD2678 /* SpaceXKit */,
+				FAB297C229BFC88C007390F8 /* SpaceXKit */,
 			);
 			productName = Example;
 			productReference = FA9D476429B61E23009A622E /* Example.app */;
@@ -164,7 +175,7 @@
 			);
 			mainGroup = FA9D475B29B61E23009A622E;
 			packageReferences = (
-				FA7C5EF129B6B9C500FD2678 /* XCRemoteSwiftPackageReference "SpaceXKit" */,
+				FAB297C129BFC88C007390F8 /* XCRemoteSwiftPackageReference "SpaceXKit" */,
 			);
 			productRefGroup = FA9D476529B61E23009A622E /* Products */;
 			projectDirPath = "";
@@ -256,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -334,8 +345,8 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,9 +354,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.sarkisov.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,8 +377,8 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.sarkisov.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -402,24 +419,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA7C5EF129B6B9C500FD2678 /* XCRemoteSwiftPackageReference "SpaceXKit" */ = {
+		FAB297C129BFC88C007390F8 /* XCRemoteSwiftPackageReference "SpaceXKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alex-sarkisov/SpaceXKit.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA7C5EF229B6B9C500FD2678 /* SpaceXKit */ = {
+		FAB297C229BFC88C007390F8 /* SpaceXKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA7C5EF129B6B9C500FD2678 /* XCRemoteSwiftPackageReference "SpaceXKit" */;
-			productName = SpaceXKit;
-		};
-		FA9D477A29B6227F009A622E /* SpaceXKit */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = FAB297C129BFC88C007390F8 /* XCRemoteSwiftPackageReference "SpaceXKit" */;
 			productName = SpaceXKit;
 		};
 /* End XCSwiftPackageProductDependency section */
